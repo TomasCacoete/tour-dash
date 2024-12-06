@@ -66,7 +66,7 @@ export default function LandingPage(){
 
             </div>
 
-            <h2>Contacts</h2>
+            <h2 id="contacts">Contacts</h2>
 
             <div className="contacts-container">
 
