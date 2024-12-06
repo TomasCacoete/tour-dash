@@ -5,10 +5,10 @@ import TeamPage from './pages/TeamPage/TeamPage';
 function App()  {
   return (
     <>
-      <HashRouter basename="/tour-dash">
+      <HashRouter>
             <Routes>
-              <Route path="/" element={<LandingPage/>}/>
-              <Route path="/team" element={<TeamPage/>}/>
+              <Route path="/tour-dash" element={<LandingPage/>}/>
+              <Route path="/tour-dash/team" element={<TeamPage/>}/>
             </Routes>
       </HashRouter>
     </>
