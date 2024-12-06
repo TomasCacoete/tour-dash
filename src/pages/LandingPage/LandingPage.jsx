@@ -8,9 +8,12 @@ import LogoInstagram from "../../assets/instagram.svg"
 
 import placeholder from "../../assets/placeholder.svg"
 
+import Navbar from '../../components/Navbar/Navbar'
+
 export default function LandingPage(){
     return(
         <div className="landing-container">
+            <Navbar/>
             <div className="landing">
                 <div className="info">
                     <img src={LogoWhite}/>
@@ -63,7 +66,7 @@ export default function LandingPage(){
 
             </div>
 
-            <h2>Contacts</h2>
+            <h2 id="contacts">Contacts</h2>
 
             <div className="contacts-container">
 

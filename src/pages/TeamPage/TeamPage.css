@@ -1,0 +1,23 @@
+.team-page-container {
+    color: #F5FFFA;
+    background-color: #1F75FE;
+}
+
+.legal-warning {
+    width: 100%;
+    padding: 0 4rem;
+    text-align: center;
+}
+
+.members {
+    padding: 3rem 0;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+}

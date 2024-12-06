@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 1rem 0;
+}
+
+.nav-logo {
+    width: 6rem;
+    cursor: pointer;
+}
+
+.nav-element {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    all: unset;
+}
