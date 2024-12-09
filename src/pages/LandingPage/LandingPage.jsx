@@ -74,15 +74,15 @@ export default function LandingPage(){
                 <a href="/" className="img-container"><img className="contact-image" src={LogoEmail}/></a>
                     <div className="contact-info-container">
                         <div className="contact-info-type">Email</div>
-                        <div className="contact-info">emailqq@gmail.com</div>
+                        <div className="contact-info">tour_dash@goeschman.com</div>
                     </div>
                 </div>
 
                 <div className="contact">
-                    <a href="/" className="img-container"><img className="contact-image" src={LogoInstagram}/></a>
+                    <a href="https://www.instagram.com/tour_dash/" className="img-container"><img className="contact-image" src={LogoInstagram}/></a>
                     <div className="contact-info-container">
                         <div className="contact-info-type">Instagram</div>
-                        <div className="contact-info">emailqq@gmail.com</div>
+                        <div className="contact-info">@tour_dash</div>
                     </div>
                 </div>
 
