@@ -133,3 +133,11 @@ h2 {
     text-align: center;
     padding-bottom: 2rem;
 }
+
+.video-container {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

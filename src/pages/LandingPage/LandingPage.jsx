@@ -36,9 +36,9 @@ export default function LandingPage(){
                 <img src={PhoneApp}/>
             </div>
 
-            <h2 className="features">What we'll have ready for you...</h2>
+            <h2 className="features">A little teaser...</h2>
 
-            <div className="cards">
+            {/*<div className="cards">
 
                 <div className="card">
                     <div className="card-title">
@@ -64,6 +64,17 @@ export default function LandingPage(){
                     <div className="card-description">Description aasasasa sasasas asasas asaa sas a sas as a  aasas asasas</div>
                 </div>
 
+            </div>*/}
+
+            <div className='video-container'>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/4KdiKJa0RZA"
+                    title="YouTube video player"
+                    //allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
             </div>
 
             <h2 id="contacts">Contacts</h2>
