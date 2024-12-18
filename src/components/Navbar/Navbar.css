@@ -4,6 +4,9 @@ nav {
     justify-content: space-evenly;
 
     padding: 1rem 0;
+
+    color: #F5FFFA;
+    background-color: #1F75FE;
 }
 
 .nav-logo {

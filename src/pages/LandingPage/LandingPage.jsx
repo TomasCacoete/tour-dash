@@ -6,14 +6,9 @@ import PhoneApp from "../../assets/phone-app.png"
 import LogoEmail from "../../assets/email.svg"
 import LogoInstagram from "../../assets/instagram.svg"
 
-import placeholder from "../../assets/placeholder.svg"
-
-import Navbar from '../../components/Navbar/Navbar'
-
 export default function LandingPage(){
     return(
         <div className="landing-container">
-            <Navbar/>
             <div className="landing">
                 <div className="info">
                     <img src={LogoWhite}/>
@@ -28,7 +23,10 @@ export default function LandingPage(){
                         challenges and meaningful impact
                     </h3>
 
-                    <button className="join-button">
+                    <button
+                        className="join-button"
+                        onClick={() => window.location.href = 'https://www.youtube.com/shorts/jtcma4mW_Hw?si=Nfj03BibLtzbNqFe'}
+                    >
                         Join Now
                     </button>
                 </div>
@@ -38,41 +36,28 @@ export default function LandingPage(){
 
             <h2 className="features">A little teaser...</h2>
 
-            {/*<div className="cards">
-
-                <div className="card">
-                    <div className="card-title">
-                        Card Title
-                        <img className="card-icon" src={placeholder}/>
-                    </div>
-                    <div className="card-description">Description aasasasa sasasas asasas asaa sas a sas as a  aasas asasas</div>
-                </div>
-
-                <div className="card">
-                    <div className="card-title">
-                        Card Title
-                        <img className="card-icon" src={placeholder}/>    
-                    </div>
-                    <div className="card-description">Description aasasasa sasasas asasas asaa sas a sas as a  aasas asasas</div>
-                </div>
-
-                <div className="card">
-                    <div className="card-title">
-                        Card Title
-                        <img className="card-icon" src={placeholder}/>
-                    </div>
-                    <div className="card-description">Description aasasasa sasasas asasas asaa sas a sas as a  aasas asasas</div>
-                </div>
-
-            </div>*/}
-
             <div className='video-container'>
                 <iframe
                     width="560"
                     height="315"
                     src="https://www.youtube.com/embed/4KdiKJa0RZA"
                     title="YouTube video player"
-                    //allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+            </div>
+
+            <h2 className="features">Learn in advance how the app will work!</h2>
+
+            <div className='video-container'>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/jtcma4mW_Hw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                 ></iframe>
             </div>

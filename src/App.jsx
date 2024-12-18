@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
 import LandingPage from './pages/LandingPage/LandingPage';
 import TeamPage from './pages/TeamPage/TeamPage';
+import { useState } from 'react';
 
 function App()  {
+  const [currentPage, setCurrentPage] = useState("landing");
+
   return (
     <>
-      <BrowserRouter basename="tour-dash">
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/team" element={<TeamPage />} />
-        </Routes>
-      </BrowserRouter>
+      <Navbar setCurrentPage={setCurrentPage} />
+      {currentPage === 'landing' && <LandingPage />}
+      {currentPage === 'team' && <TeamPage />}
     </>
   );
 }

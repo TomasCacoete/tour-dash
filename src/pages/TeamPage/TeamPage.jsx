@@ -5,7 +5,6 @@ import Navbar from "../../components/Navbar/Navbar";
 export default function TeamPage(){
     return(
         <div className="team-page-container">
-            <Navbar/>
 
             <h2>Our Team</h2>
 

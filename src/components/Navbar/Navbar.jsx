@@ -2,12 +2,19 @@ import "./Navbar.css"
 
 import LogoWhite from "../../assets/logo-white.svg"
 
-export default function Navbar(){
-    return(
-        <nav>
-            <a href="/tour-dash/"><img className="nav-logo" src={LogoWhite}/></a>
-            <a href="/tour-dash/team/" className="nav-element">Team</a>
-            <a href="/tour-dash/#contacts" className="nav-element">Contacts</a>
-        </nav>
-    )
-}
+export default function Navbar({ setCurrentPage }) {
+    return (
+      <nav>
+        <img className="nav-logo" src={LogoWhite} alt="Logo" />
+        <div onClick={() => setCurrentPage('landing')} className="nav-element">
+          Home
+        </div>
+        <div onClick={() => setCurrentPage('team')} className="nav-element">
+          Team
+        </div>
+        <div onClick={() => setCurrentPage('landing')} className="nav-element">
+          Contacts
+        </div>
+      </nav>
+    );
+  }
