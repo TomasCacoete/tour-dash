@@ -6,7 +6,7 @@ import PhoneApp from "../../assets/phone-app.png"
 import LogoEmail from "../../assets/email.svg"
 import LogoInstagram from "../../assets/instagram.svg"
 
-export default function LandingPage(){
+export default function LandingPage({ contactsRef }){
     return(
         <div className="landing-container">
             <div className="landing">
@@ -62,7 +62,7 @@ export default function LandingPage(){
                 ></iframe>
             </div>
 
-            <h2 id="contacts">Contacts</h2>
+            <h2 id="contacts" ref={contactsRef}>Contacts</h2>
 
             <div className="contacts-container">
 
